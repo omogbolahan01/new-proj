@@ -76,8 +76,10 @@ export default function Home() {
       </div>
       <div className="partners">
         <p>Leading corporations rely on our design expertise.</p>
-        <div className="partners-img"></div>
+        <div className="partners-img">
         <img src="/images/partners 1.png" alt="" />
+
+        </div>
       </div>
       <div className="process-area">
         <div className="process-text">
@@ -212,15 +214,20 @@ export default function Home() {
         </div>
         <div className="project-link">
           <div className="link-one">
-            <div>
-              <img src="/images/Frame 55.png" alt="" />
+            <div className="link-www">
+              <div className="link-img">
+                <img src="/images/Frame 55.png" alt="" />
+              </div>
               <div className="link-state">
                 <h3 className="my-header">Tammer project</h3>
                 <p className="my-header">Branding</p>
               </div>
             </div>
-            <div>
-              <img src="/images/Frame 55 (1).png" alt="" />
+            <div className="link-www">
+              <div className="link-img">
+                <img src="/images/Frame 55 (1).png" alt="" />
+              </div>
+
               <div className="link-state">
                 <h3 className="my-header">Lamma project</h3>
                 <p className="my-header">Mobile app</p>
@@ -228,15 +235,21 @@ export default function Home() {
             </div>
           </div>
           <div className="link-two">
-            <div>
-              <img src="/images/Frame 55 (2).png" alt="" />
+            <div className="link-www">
+              <div className="link-img">
+                <img src="/images/Frame 55 (2).png" alt="" />
+              </div>
+
               <div className="link-state">
                 <h3 className="my-header">Grammer project</h3>
                 <p className="my-header">Website</p>
               </div>
             </div>
-            <div>
-              <img src="/images/Frame 55 (3).png" alt="" />
+            <div className="link-www">
+              <div className="link-img">
+                <img src="/images/Frame 55 (3).png" alt="" />
+              </div>
+
               <div className="link-state">
                 <h3 className="my-header">Kammo project</h3>
                 <p className="my-header">Illustration</p>

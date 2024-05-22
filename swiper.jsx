@@ -5,17 +5,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
+// import 'swiper/swiper-bundle.min.css';
 import "./style.css";
 
 // import required modules
 import { Pagination } from "swiper/modules";
 
+
 export default function Slider() {
   return (
     <>
       <Swiper
-        slidesPerView={2.4}
+        slidesPerView={1}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -23,17 +24,8 @@ export default function Slider() {
         modules={[Pagination]}
         className="mySwiper"
         breakpoints={{
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-          },
-          // when window width is <= 768px
-          768: {
+          800: {
             slidesPerView: 2,
-          },
-          // when window width is <= 1024px
-          1024: {
-            slidesPerView: 2.4,
           },
         }}
       >

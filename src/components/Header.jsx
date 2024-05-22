@@ -20,14 +20,18 @@ export default function Header() {
 
   return (
     <header>
-      <div className="site-logo">
+      <div className="site-logo" onClick={() => navigate("/")}>
         <div className="site-image">
           <img src="/images/Group 1.png" alt="Site Logo" />
         </div>
         <h2>DesignMax</h2>
       </div>
       <nav>
-        <div className="navbar-toggle" onClick={toggleNavbar}>
+        <div
+          className="navbar-toggle"
+          onClick={toggleNavbar}
+          aria-label="Toggle navigation"
+        >
           <div className={`bar ${isOpen ? "animate" : ""}`}></div>
           <div className={`bar ${isOpen ? "animate" : ""}`}></div>
           <div className={`bar ${isOpen ? "animate" : ""}`}></div>
@@ -35,7 +39,7 @@ export default function Header() {
         <div className={`navbar-links ${isOpen ? "active" : ""}`}>
           <NavLink
             to="/"
-            style={(isActive) => (isActive ? activeStyles : null)}
+            style={({ isActive }) => (isActive ? activeStyles : null)}
             onClick={closeNavbar}
             className="nav-item"
           >
@@ -43,7 +47,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/team"
-            style={(isActive) => (isActive ? activeStyles : null)}
+            style={({ isActive }) => (isActive ? activeStyles : null)}
             onClick={closeNavbar}
             className="nav-item"
           >
@@ -51,7 +55,7 @@ export default function Header() {
           </NavLink>
           <NavLink
             to="/project"
-            style={(isActive) => (isActive ? activeStyles : null)}
+            style={({ isActive }) => (isActive ? activeStyles : null)}
             onClick={closeNavbar}
             className="nav-item"
           >
@@ -59,7 +63,7 @@ export default function Header() {
           </NavLink>
           {/* <NavLink
             to="/about"
-            style={(isActive) => (isActive ? activeStyles : null)}
+            style={({ isActive }) => (isActive ? activeStyles : null)}
             onClick={closeNavbar}
             className="nav-item"
           >
@@ -67,7 +71,7 @@ export default function Header() {
           </NavLink> */}
           <NavLink
             to="/contact"
-            style={(isActive) => (isActive ? activeStyles : null)}
+            style={({ isActive }) => (isActive ? activeStyles : null)}
             onClick={closeNavbar}
             className="nav-item"
           >
