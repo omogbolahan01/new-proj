@@ -1450,4 +1450,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .tammer-ftext h2 {
+    font-size: 3rem;
+  }
 }
