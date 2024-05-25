@@ -206,6 +206,9 @@ footer {
 .area-one {
   margin-left: auto;
   padding-right: 3rem;
+  font-family: Inter;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 .area-one h4 {
   font-family: Inter;
@@ -358,7 +361,7 @@ footer {
 }
 .process-one {
   background-color: #f7f7f7;
-  width: 40rem;
+  width: 25%;
   padding: 4rem 2rem;
   border-radius: 11px;
   justify-content: center;
@@ -986,6 +989,9 @@ footer {
   .process-text p {
     padding: 0.1rem 15rem;
   }
+  .pro-img {
+    width: 5rem;
+  }
   .service-text p {
     padding: 0.1rem 15rem;
   }
@@ -1039,6 +1045,15 @@ footer {
   }
   .price-text p {
     padding: 0.5rem 10rem;
+  }
+  .price-list {
+    width: 100%;
+  }
+  .list-price {
+    width: 30%;
+  }
+  .try {
+    width: 30%;
   }
   .testi-text p {
     padding: 0.5rem 10rem;
@@ -1124,6 +1139,20 @@ footer {
   .grid-2 img {
     width: 100%;
     object-fit: contain;
+  }
+  .button-get {
+    width: 15rem;
+    margin-left: 0;
+  }
+  .button-get button {
+    width: 15rem;
+  }
+  .button-get2 {
+    width: 15rem;
+    margin-left: 0;
+  }
+  .button-get2 button {
+    width: 15rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1395,5 +1424,8 @@ footer {
   }
   .list-price {
     width: 23rem;
+  }
+  .area-one {
+    padding-right: 2rem;
   }
 }

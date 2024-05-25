@@ -2,6 +2,7 @@ import React from "react-dom";
 import { Link } from "react-router-dom";
 import Slider from "../../swiper";
 import Slider1 from "../../Slider1";
+import Clock from "../../Clock";
 export default function Home() {
   return (
     <div className="homepage-area">
@@ -9,7 +10,7 @@ export default function Home() {
         <div className="first-area">
           <div></div>
           <div className="area-one">
-            <h4>10:20 PM</h4>
+            <Clock />
           </div>
         </div>
         <div className="first-text">
@@ -402,58 +403,58 @@ export default function Home() {
                 <button className="button-get2">Get Started</button>
               </div>
             </div>
-            <div className="try">
-              <div className="list-price">
-                <h3>Business</h3>
-                <h4>
-                  $15 <span>p/month</span>{" "}
-                </h4>
-                <div className="list-flex">
-                  {" "}
-                  <div>
-                    <img src="/images/Vector (8).png" />
-                  </div>
-                  <p>1 integration</p>
+            {/* <div className="try"> */}
+            <div className="list-price">
+              <h3>Business</h3>
+              <h4>
+                $15 <span>p/month</span>{" "}
+              </h4>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
                 </div>
-                <div className="list-flex">
-                  {" "}
-                  <div>
-                    <img src="/images/Vector (8).png" />
-                  </div>
-                  <p>Analytics</p>
-                </div>
-                <div className="list-flex">
-                  {" "}
-                  <div>
-                    <img src="/images/Vector (8).png" />
-                  </div>
-                  <p>Insight</p>
-                </div>
-                <div className="list-flex">
-                  {" "}
-                  <div>
-                    <img src="/images/Vector (8).png" />
-                  </div>
-                  <p>Insight</p>
-                </div>
-                <div className="list-flex">
-                  {" "}
-                  <div>
-                    <img src="/images/Vector (8).png" />
-                  </div>
-                  <p>Shared features </p>
-                </div>
-                <div className="list-flex">
-                  {" "}
-                  <div>
-                    <img src="/images/Vector (8).png" />
-                  </div>
-                  <p>No custom setting</p>
-                </div>
-                <div className="button-get">
-                  <button className="button-get">Get Started</button>
-                </div>
+                <p>1 integration</p>
               </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Analytics</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Insight</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Insight</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Shared features </p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>No custom setting</p>
+              </div>
+              <div className="button-get">
+                <button className="button-get">Get Started</button>
+              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
