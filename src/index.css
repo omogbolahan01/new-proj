@@ -316,7 +316,9 @@ footer {
   color: #000000;
 }
 .partners-img {
-  width: 100%;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .partners-img img {
   width: 100%;
@@ -362,9 +364,22 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pro-img {
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pro-img img {
+  width: 100%;
+  object-fit: contain;
 }
 .one-text h3 {
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 0.5rem;
   font-family: Inter;
   font-size: 1.3rem;
@@ -826,6 +841,81 @@ footer {
   font-weight: 400;
   text-align: right;
 }
+.price-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+.try {
+  justify-content: center;
+}
+.list-price {
+  width: 20rem;
+  background-color: #ffffff;
+  border: 1px solid #c1c1c1;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+.list-price h3 {
+  font-family: Sora;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.list-price h4 {
+  font-family: Sora;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.list-price span {
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.list-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-get {
+  justify-content: center;
+  width: 15rem;
+  margin-left: 1rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #0c0c0c;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.button-get button {
+  padding: 1rem;
+}
+.button-get2 {
+  justify-content: center;
+  width: 15rem;
+  margin-left: 1rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #05c04b;
+  color: #ffffff;
+  border-radius: 1.5rem;
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.button-get2 button {
+  padding: 1rem;
+}
 @media screen and (max-width: 1300px) {
   .service-text h3 {
     padding: 0.5rem 20rem;
@@ -1037,6 +1127,37 @@ footer {
   }
 }
 @media screen and (max-width: 700px) {
+  .home-button {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .btt-1 {
+    width: 100%;
+  }
+  .btt-1 button {
+    width: 100%;
+  }
+  .btt-2 {
+    width: 100%;
+  }
+  .btt-2 button {
+    width: 100%;
+  }
+  .home-stararea {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .star-two {
+    justify-content: center;
+    align-items: center;
+  }
+  .starr {
+    justify-content: center;
+    align-items: center;
+  }
   .navbar-toggle {
     display: flex;
   }
@@ -1092,12 +1213,15 @@ footer {
   }
   .process-all {
     flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .process-one {
     width: 100%;
   }
   .service-text h3 {
     padding: 0.5rem 2rem;
+    font-size: 1.8rem;
   }
   .service-text p {
     padding: 0.5rem 2rem;
@@ -1105,17 +1229,30 @@ footer {
   .service-all {
     flex-direction: column;
     display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .part-1 {
     flex-direction: column;
   }
   .service-one {
+    flex-direction: column;
     width: 100%;
+  }
+  .service-image {
+    width: 100%;
+  }
+  .service-image img {
+    width: 100%;
+    object-fit: contain;
   }
   .service-two {
     width: 100%;
+    flex-direction: column;
   }
-
+  .service-write h3 {
+    padding-bottom: 1rem;
+  }
   .part-two {
     flex-direction: column;
   }
@@ -1155,6 +1292,29 @@ footer {
   }
   .team-text p {
     padding: 1rem 3rem 1rem;
+  }
+  .team-flex {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .team-image {
+    width: 100%;
+  }
+  .team-image img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .team-text h4 {
+    padding-left: 1.5rem;
+  }
+  .team-text h3 {
+    padding: 1rem 1.5rem 1rem;
+  }
+  .team-text p {
+    padding: 1rem 1.5rem 1rem;
+  }
+  .empty {
+    margin: 0.5rem 1.5rem;
   }
   .price-text h3 {
     padding: 1rem 2rem;
@@ -1211,6 +1371,7 @@ footer {
     text-align: center;
     padding: 2rem 1.5rem;
   }
+
   .contact-grid {
     display: flex;
     flex-direction: column;
@@ -1222,10 +1383,17 @@ footer {
     font-size: 2.6rem;
   }
   .text-21 p {
-    padding-left: 1.5rem;
-    text-align: justify;
+    padding-left: 0;
+    text-align: center;
   }
   .contact-grid {
     padding: 1.5rem;
+  }
+  .price-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-price {
+    width: 23rem;
   }
 }

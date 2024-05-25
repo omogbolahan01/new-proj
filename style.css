@@ -59,9 +59,9 @@ body {
 .text-swiper {
   padding: 2rem;
 }
-@media screen and (max-width: 700px) {
-  .swiper{
-  margin:0 1rem
 
+@media screen and (max-width: 700px) {
+  .swiper {
+    margin: 0 1rem;
   }
 }

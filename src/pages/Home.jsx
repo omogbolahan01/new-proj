@@ -1,6 +1,7 @@
 import React from "react-dom";
 import { Link } from "react-router-dom";
 import Slider from "../../swiper";
+import Slider1 from "../../Slider1";
 export default function Home() {
   return (
     <div className="homepage-area">
@@ -61,24 +62,12 @@ export default function Home() {
         </div>
       </div>
       <div className="home-second">
-        <div className="second-imgg">
-          <img src="/images/WDW-1.png" alt="" />
-        </div>
-        <div className="second-imgg">
-          <img src="/images/WDW-2.png" alt="" />
-        </div>
-        <div className="second-imgg">
-          <img src="/images/WDW-3.png" alt="" />
-        </div>
-        <div className="second-imgg">
-          <img src="/images/WDW-4.png" alt="" />
-        </div>
+        <Slider1 />
       </div>
       <div className="partners">
         <p>Leading corporations rely on our design expertise.</p>
         <div className="partners-img">
-        <img src="/images/partners 1.png" alt="" />
-
+          <img src="/images/partners 1.png" alt="" />
         </div>
       </div>
       <div className="process-area">
@@ -92,7 +81,10 @@ export default function Home() {
         </div>
         <div className="process-all">
           <div className="process-one">
-            <img src="/images/calendar.png" alt="" />
+            <div className="pro-img">
+              <img src="/images/Design-ICe.gif" alt="" />
+            </div>
+
             <div className="one-text">
               <h3 className="my-header"> Book Call</h3>
               <p className="my-header">
@@ -101,7 +93,9 @@ export default function Home() {
             </div>
           </div>
           <div className="process-one">
-            <img src="/images/money.png" alt="" />
+            <div className="pro-img">
+              <img src="/images/Design-ICe-1.gif" alt="" />
+            </div>
             <div className="one-text">
               <h3 className="my-header"> Subscribe</h3>
               <p className="my-header">
@@ -110,7 +104,9 @@ export default function Home() {
             </div>
           </div>
           <div className="process-one">
-            <img src="/images/dashboard.png" alt="" />
+            <div className="pro-img">
+              <img src="/images/Design-ICe-2.gif" alt="" />
+            </div>
             <div className="one-text">
               <h3 className="my-header"> Review</h3>
               <p className="my-header">
@@ -119,7 +115,9 @@ export default function Home() {
             </div>
           </div>
           <div className="process-one">
-            <img src="/images/start.png" alt="" />
+            <div className="pro-img">
+              <img src="/images/Design-ICe-3.gif" alt="" />
+            </div>
             <div className="one-text">
               <h3 className="my-header"> Launch</h3>
               <p className="my-header">
@@ -300,14 +298,163 @@ export default function Home() {
           </p>
         </div>
         <div className="price-flex">
-          <div className="price-image">
-            <img src="/images/Frame 76 (1).png" alt="" />
-          </div>
-          <div className="price-image">
-            <img src="/images/Frame 76 (1).png" alt="" />
-          </div>
-          <div className="price-image">
-            <img src="/images/Frame 76 (1).png" alt="" />
+          <div className="price-list">
+            <div className="list-price">
+              <h3>Personal</h3>
+              <h4>
+                $5 <span>p/month</span>{" "}
+              </h4>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>1 integration</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Analytics</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Insight</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Insight</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Shared features </p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>No custom setting</p>
+              </div>
+              <div className="button-get">
+                {" "}
+                <button className="button-get">Get Started</button>
+              </div>
+            </div>
+            <div className="list-price">
+              <h3>Professional</h3>
+              <h4>
+                $10 <span>p/month</span>{" "}
+              </h4>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>1 integration</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Analytics</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Insight</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Insight</p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>Shared features </p>
+              </div>
+              <div className="list-flex">
+                {" "}
+                <div>
+                  <img src="/images/Vector (8).png" />
+                </div>
+                <p>No custom setting</p>
+              </div>
+              <div className="button-get2">
+                <button className="button-get2">Get Started</button>
+              </div>
+            </div>
+            <div className="try">
+              <div className="list-price">
+                <h3>Business</h3>
+                <h4>
+                  $15 <span>p/month</span>{" "}
+                </h4>
+                <div className="list-flex">
+                  {" "}
+                  <div>
+                    <img src="/images/Vector (8).png" />
+                  </div>
+                  <p>1 integration</p>
+                </div>
+                <div className="list-flex">
+                  {" "}
+                  <div>
+                    <img src="/images/Vector (8).png" />
+                  </div>
+                  <p>Analytics</p>
+                </div>
+                <div className="list-flex">
+                  {" "}
+                  <div>
+                    <img src="/images/Vector (8).png" />
+                  </div>
+                  <p>Insight</p>
+                </div>
+                <div className="list-flex">
+                  {" "}
+                  <div>
+                    <img src="/images/Vector (8).png" />
+                  </div>
+                  <p>Insight</p>
+                </div>
+                <div className="list-flex">
+                  {" "}
+                  <div>
+                    <img src="/images/Vector (8).png" />
+                  </div>
+                  <p>Shared features </p>
+                </div>
+                <div className="list-flex">
+                  {" "}
+                  <div>
+                    <img src="/images/Vector (8).png" />
+                  </div>
+                  <p>No custom setting</p>
+                </div>
+                <div className="button-get">
+                  <button className="button-get">Get Started</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
