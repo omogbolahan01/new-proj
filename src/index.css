@@ -18,7 +18,7 @@ body {
 }
 
 .site-wrapper {
-  max-width: 1400px;
+  max-width: 1450px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #fff;
@@ -66,6 +66,13 @@ body {
   text-align: center;
   color: #000000;
 }
+.site-logo h3 {
+  font-family: Inter;
+  font-size: 0.87rem;
+  font-weight: 600;
+  text-align: center;
+  color: #f2f5f9;
+}
 .site-image {
   width: 2rem;
 }
@@ -86,6 +93,11 @@ nav {
 }
 .nav-item {
   /* margin-left: 2rem; */
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.nav-item2 {
+  /* margin-left: 3rem; */
   text-decoration: none;
   font-size: 0.85rem;
 }
@@ -160,6 +172,36 @@ footer {
   padding-right: 55rem;
   color: #ffffff;
 }
+.footer-last {
+  background-color: #000000;
+  color: #f7f7f7;
+  align-items: center;
+  display: flex;
+  padding-bottom: 5rem;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  color: #f7f7f7;
+  margin-right: 3rem;
+}
+.still-footer {
+  background-color: #000000;
+}
+.stilll-footer {
+  background-color: #000000;
+}
+.final-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f6ede4;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.final-text h4 {
+  font-size: 0.9rem;
+}
 .footer-first {
   padding: 3rem 4rem;
 }
@@ -167,7 +209,7 @@ footer {
   justify-content: center;
   text-align: center;
   background-color: #000000;
-  padding: 3rem;
+  padding: 6rem 3rem;
   border-radius: 10px;
 }
 .footer-one h3 {
@@ -175,27 +217,51 @@ footer {
   font-size: 2rem;
   font-weight: 600;
   color: #ffffff;
-  padding-left: 15rem;
-  padding-right: 15rem;
-  padding-top: 3rem;
+  padding-left: 23rem;
+  padding-right: 23rem;
+  /* padding-top: 3rem; */
 }
-.footer-one p {
-  font-family: Inter;
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 1rem 20rem;
-}
-.footer-button {
+.footer-button2 {
   justify-content: center;
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
-.footer-button button {
+.btt-11 button {
+  width: 10rem;
   background-color: #43ff56;
+  color: #ffffff;
   border: none;
+  outline: none;
   cursor: pointer;
+  border-radius: 7px;
+  padding: 0.11rem 2rem;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
+.btt-12 button {
+  background-color: transparent;
+  color: #ffffff;
+  width: 10rem;
+  border: 0.5px solid #ffffff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 0.05rem 2rem;
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.footer-one p {
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 1rem 23rem;
+}
+
 .home-first {
   background-image: url(/images/Background.png);
   padding-bottom: 4rem;
@@ -256,7 +322,7 @@ footer {
 .btt-2 button {
   background-color: transparent;
   color: #000000;
-  border: 0.5px solid #000000;
+  border: 0.5px solid hsl(0, 9%, 52%);
   outline: none;
   cursor: pointer;
   border-radius: 7px;
@@ -319,7 +385,7 @@ footer {
   color: #000000;
 }
 .partners-img {
-  width: 65%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -352,7 +418,7 @@ footer {
   font-family: Inter;
   font-size: 0.75rem;
   font-weight: 400;
-  padding: 0.1rem 30rem;
+  padding: 0.1rem 30rem 1.5rem;
 }
 .process-all {
   display: flex;
@@ -362,7 +428,7 @@ footer {
 .process-one {
   background-color: #f7f7f7;
   width: 25%;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem;
   border-radius: 11px;
   justify-content: center;
   align-items: center;
@@ -395,7 +461,7 @@ footer {
   color: #000000;
 }
 .service-text {
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   justify-content: center;
   align-items: center;
@@ -473,9 +539,59 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 10rem;
   padding-bottom: 3rem;
 }
+.project-link {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-one,
+.link-two {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.link-www {
+  position: relative;
+  /* width: 48%;  */
+  /* margin: 1%; */
+  /* background-color: #f0f0f0;  */
+  overflow: hidden;
+}
+
+.link-img img {
+  width: 100%;
+  height: auto;
+}
+
+.link-state {
+  /* padding: 10px; */
+}
+
+.hover-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #05c04b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.link-www:hover .hover-circle {
+  opacity: 1;
+}
+
 .project-text h4 {
   font-family: Inter;
   font-size: 0.85rem;
@@ -491,7 +607,7 @@ footer {
 }
 .project-text p {
   font-family: Inter;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
   color: #000000;
   padding: 0.5rem 25rem;
@@ -568,9 +684,24 @@ footer {
   gap: 1rem;
   display: flex;
 }
+.team-flex {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.team-image {
+  width: 25%;
+}
+.team-image img {
+  width: 100%;
+  object-fit: contain;
+}
 .empty {
   border: 0.5px solid #dbdbdb;
   margin: 0.5rem 3rem;
+}
+.empty2 {
+  border: 0.5px solid #dbdbdb;
+  margin: 0 3rem 1rem;
 }
 .price-text {
   padding-top: 4rem;
@@ -1345,6 +1476,25 @@ footer {
   .empty {
     margin: 0.5rem 1.5rem;
   }
+  .empty2 {
+    margin: 0.5rem 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: left; */
+  }
+
+  .footer-button2 {
+    flex-direction: column;
+  }
+  .footer-last {
+    flex-direction: column;
+    padding-bottom: 6rem;
+  }
+  .still-footer {
+    padding-top: 2rem;
+  }
   .price-text h3 {
     padding: 1rem 2rem;
   }
@@ -1452,5 +1602,8 @@ footer {
   }
   .tammer-ftext h2 {
     font-size: 3rem;
+  }
+  .footer-button {
+    flex-direction: column;
   }
 }

@@ -3,13 +3,14 @@
   white-space: nowrap;
   overflow: hidden;
   height: 25rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  gap: 1rem;
 }
 
 .second-imgg {
   display: inline-block;
   animation: slide 5s linear infinite;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .slider-text p {
   font-family: Inter;

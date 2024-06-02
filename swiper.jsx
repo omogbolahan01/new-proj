@@ -1,10 +1,8 @@
-import React, { useRef, useState } from "react";
-
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
-import "./style.css";
+import "./style.css"; // Custom CSS for circular pagination
 import { Pagination } from "swiper/modules";
 
 export default function Slider() {
@@ -13,9 +11,7 @@ export default function Slider() {
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true }}
         modules={[Pagination]}
         className="mySwiper"
         breakpoints={{

@@ -213,7 +213,7 @@ export default function Home() {
         </div>
         <div className="project-link">
           <div className="link-one">
-            <div className="link-www">
+            <Link to="/tammer" className="link-www">
               <div className="link-img">
                 <img src="/images/Frame 55.png" alt="" />
               </div>
@@ -221,39 +221,40 @@ export default function Home() {
                 <h3 className="my-header">Tammer project</h3>
                 <p className="my-header">Branding</p>
               </div>
-            </div>
-            <div className="link-www">
+              <div className="hover-circle">View</div>
+            </Link>
+            <Link to="lamma" className="link-www">
               <div className="link-img">
                 <img src="/images/Frame 55 (1).png" alt="" />
               </div>
-
               <div className="link-state">
                 <h3 className="my-header">Lamma project</h3>
                 <p className="my-header">Mobile app</p>
               </div>
-            </div>
+              <div className="hover-circle">View</div>
+            </Link>
           </div>
           <div className="link-two">
-            <div className="link-www">
+            <Link to="/grammer" className="link-www">
               <div className="link-img">
                 <img src="/images/Frame 55 (2).png" alt="" />
               </div>
-
               <div className="link-state">
                 <h3 className="my-header">Grammer project</h3>
                 <p className="my-header">Website</p>
               </div>
-            </div>
-            <div className="link-www">
+              <div className="hover-circle">View</div>
+            </Link>
+            <Link to="/kanmo" className="link-www">
               <div className="link-img">
                 <img src="/images/Frame 55 (3).png" alt="" />
               </div>
-
               <div className="link-state">
                 <h3 className="my-header">Kammo project</h3>
                 <p className="my-header">Illustration</p>
               </div>
-            </div>
+              <div className="hover-circle">View</div>
+            </Link>
           </div>
         </div>
         <div className="project-showmore">
