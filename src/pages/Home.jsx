@@ -1,6 +1,6 @@
 import React from "react-dom";
 import { Link } from "react-router-dom";
-import Slider from "../../swiper";
+import Sliders from "../../swiper";
 import Slider1 from "../../Slider1";
 import Clock from "../../Clock";
 export default function Home() {
@@ -470,7 +470,7 @@ export default function Home() {
           </p>
         </div>
         <div className="my-header">
-          <Slider />
+          <Sliders />
         </div>
       </div>
     </div>

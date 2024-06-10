@@ -1,75 +1,143 @@
-/* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-/* General Styles */
-#app {
-  height: 100%;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #eee;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  color: #000;
-}
-
-/* Swiper Styles */
-.swiper {
+.slider-container {
   width: 100%;
-  height: 100%;
-  margin: 0 2rem 4rem 5rem;
-  overflow-x: hidden;
-}
-
-.swiper-slide {
-  background-color: #f8f8f8;
   overflow: hidden;
 }
 
-.starr2 {
+.slider {
   display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin-left: 3rem;
 }
 
-.swiper-text h3 {
-  font-family: "Inter", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.swiper-image {
+.slider-inner {
   display: flex;
+  width: 40%;
   gap: 1rem;
 }
 
-.swipe-2 h2 {
-  font-family: "Inter", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-align: center;
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border-radius: 1rem;
 }
 
-.swipe-2 p {
-  font-family: "Inter", sans-serif;
-  font-size: 0.7rem;
+.testimonial {
+  padding: 20px;
+}
+
+.testimonial-text {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.testimonial-text {
+  font-family: Inter;
+  font-size: 14px;
   font-weight: 400;
+  color: #000000;
+  padding-bottom: 2rem;
+}
+.testimonial-info {
+  display: flex;
+  align-items: center;
 }
 
-.text-swiper {
-  padding: 2rem;
+.testimonial-image img {
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
+.testimonial-details h3 {
+  margin: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.testimonial-details p {
+  margin: 0;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dots-wrapper {
+  display: flex;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #f0f0f0;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between stars and the text */
+}
+
+.star {
+  height: 20px; /* Adjust as needed */
+  width: 20px; /* Adjust as needed */
+  margin-right: 5px;
+}
+
+.half-star {
+  position: relative;
+  display: inline-block;
+}
+
+.half-star img {
+  position: absolute;
+  clip: rect(-10px, 20px, 20px, 0);
+}
 @media screen and (max-width: 700px) {
-  .swiper {
-    margin: 0 1rem;
+  .testimonial-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .slider-inner {
+    width: 100%;
+  }
+  .slider {
+    margin-left: 1rem;
+  }
+  .testimonial-image img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .dots-container {
+    margin-top: -7rem;
+    background-color: #000000;
+  }
+
+  .dots-wrapper {
+    border-radius: 10px; /* Adjusted for smaller screens */
+  }
+
+  .star {
+    height: 15px; /* Adjust for smaller screens */
+    width: 15px; /* Adjust for smaller screens */
   }
 }

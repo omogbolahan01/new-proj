@@ -1,220 +1,104 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "./style.css"; // Custom CSS for circular pagination
-import { Pagination } from "swiper/modules";
+import React, { useState } from "react";
+import "./style.css"; // Import the custom CSS
 
-export default function Slider() {
+const Sliders = () => {
+  const slides = [
+    {
+      text: "“The team at DesignMax Agency went above and beyond to ensure our project was a success. Their professionalism, expertise, and dedication to customer satisfaction made them a pleasure to work with”",
+      name: "Michael L.",
+      title: "CTO Tesla",
+      image: "/images/E26.png",
+    },
+    {
+      text: "“The team at DesignMax Agency went above and beyond to ensure our project was a success. Their professionalism, expertise, and dedication to customer satisfaction made them a pleasure to work with”",
+      name: "Michael L.",
+      title: "CTO Tesla",
+      image: "/images/E26.png",
+    },
+    {
+      text: "“The team at DesignMax Agency went above and beyond to ensure our project was a success. Their professionalism, expertise, and dedication to customer satisfaction made them a pleasure to work with”",
+      name: "Michael L.",
+      title: "CTO Tesla",
+      image: "/images/E26.png",
+    },
+    {
+      text: "“The team at DesignMax Agency went above and beyond to ensure our project was a success. Their professionalism, expertise, and dedication to customer satisfaction made them a pleasure to work with”",
+      name: "Michael L.",
+      title: "CTO Tesla",
+      image: "/images/E26.png",
+    },
+    {
+      text: "“The team at DesignMax Agency went above and beyond to ensure our project was a success. Their professionalism, expertise, and dedication to customer satisfaction made them a pleasure to work with”",
+      name: "Michael L.",
+      title: "CTO Tesla",
+      image: "/images/E26.png",
+    },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
   return (
-    <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        className="mySwiper"
-        breakpoints={{
-          800: {
-            slidesPerView: 2,
-          },
-        }}
-      >
-        <SwiperSlide>
-          <div className="text-swiper">
-            <div className="starr2">
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (32).png" alt="" />
-              </div>
-            </div>
-            <div className="swiper-text">
-              <h3 className="my-header">
-                “The team at DesignMax Agency went above and beyond to ensure
-                our project was a success. Their professionalism, expertise, and
-                dedication to customer satisfaction made them a pleasure to work
-                with”
-              </h3>
-            </div>
-            <div className="swiper-image">
-              <div className="swipe-1">
-                <img src="/images/E26.png" alt="" />
-              </div>
-              <div className="swipe-2">
-                <h2 className="my-header">Michael L.</h2>
-                <p className="my-header"> CTO Tesla</p>
+    <div className="slider-container">
+      <div className="slider">
+        <div
+          className="slider-inner"
+          style={{
+            transform: `translateX(-${currentSlide * (500 / slides.length)}%)`,
+          }}
+        >
+          {slides.map((slide, index) => (
+            <div
+              className={`slide ${
+                index === currentSlide ||
+                index === (currentSlide + 1) % slides.length
+                  ? "active"
+                  : ""
+              }`}
+              key={index}
+            >
+              <div className="testimonial">
+                <div className="stars">
+                  {[...Array(5)].map((_, i) => (
+                    <img
+                      key={i}
+                      className="star"
+                      src="/images/Vector (33).png"
+                      alt="Star"
+                    />
+                  ))}
+                </div>
+                <p className="testimonial-text">{slide.text}</p>
+                <div className="testimonial-info">
+                  <div className="testimonial-image">
+                    <img src={slide.image} alt={slide.name} />
+                  </div>
+                  <div className="testimonial-details">
+                    <h3>{slide.name}</h3>
+                    <p>{slide.title}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="text-swiper">
-            <div className="starr2">
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (32).png" alt="" />
-              </div>
-            </div>
-            <div className="swiper-text">
-              <h3 className="my-header">
-                “The team at DesignMax Agency went above and beyond to ensure
-                our project was a success. Their professionalism, expertise, and
-                dedication to customer satisfaction made them a pleasure to work
-                with”
-              </h3>
-            </div>
-            <div className="swiper-image">
-              <div className="swipe-1">
-                <img src="/images/E26.png" alt="" />
-              </div>
-              <div className="swipe-2">
-                <h2 className="my-header">Michael L.</h2>
-                <p className="my-header"> CTO Tesla</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="text-swiper">
-            <div className="starr2">
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (32).png" alt="" />
-              </div>
-            </div>
-            <div className="swiper-text">
-              <h3 className="my-header">
-                "Working with DesignMax Agency was a game-changer for our
-                business. They helped us elevate our brand and significantly
-                increase our online visibility. I can't recommend them highly
-                enough!"
-              </h3>
-            </div>
-            <div className="swiper-image">
-              <div className="swipe-1">
-                <img src="/images/E26.png" alt="" />
-              </div>
-              <div className="swipe-2">
-                <h2 className="my-header">Michael L.</h2>
-                <p className="my-header"> CTO Tesla</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="text-swiper">
-            <div className="starr2">
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (32).png" alt="" />
-              </div>
-            </div>
-            <div className="swiper-text">
-              <h3 className="my-header">
-                “The team at DesignMax Agency went above and beyond to ensure
-                our project was a success. Their professionalism, expertise, and
-                dedication to customer satisfaction made them a pleasure to work
-                with”
-              </h3>
-            </div>
-            <div className="swiper-image">
-              <div className="swipe-1">
-                <img src="/images/E26.png" alt="" />
-              </div>
-              <div className="swipe-2">
-                <h2 className="my-header">Michael L.</h2>
-                <p className="my-header"> CTO Tesla</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="text-swiper">
-            <div className="starr2">
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (31).png" alt="" />
-              </div>
-              <div className="star">
-                <img src="/images/Vector (32).png" alt="" />
-              </div>
-            </div>
-            <div className="swiper-text">
-              <h3 className="my-header">
-                “The team at DesignMax Agency went above and beyond to ensure
-                our project was a success. Their professionalism, expertise, and
-                dedication to customer satisfaction made them a pleasure to work
-                with”
-              </h3>
-            </div>
-            <div className="swiper-image">
-              <div className="swipe-1">
-                <img src="/images/E26.png" alt="" />
-              </div>
-              <div className="swipe-2">
-                <h2 className="my-header">Michael L.</h2>
-                <p className="my-header"> CTO Tesla</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </>
+          ))}
+        </div>
+      </div>
+      <div className="dots-container">
+        <div className="dots-wrapper">
+          {slides.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${index === currentSlide ? "active" : ""}`}
+              onClick={() => goToSlide(index)}
+            ></div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Sliders;
