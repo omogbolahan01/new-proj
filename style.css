@@ -88,12 +88,12 @@
 }
 
 .dot.active {
-  background-color: #f0f0f0;
+  background-color: #0d0d0d;
 }
 .stars {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Add space between stars and the text */
+  margin-bottom: 10px;
 }
 
 .star {
@@ -131,13 +131,18 @@
     margin-top: -7rem;
     background-color: #000000;
   }
-
-  .dots-wrapper {
-    border-radius: 10px; /* Adjusted for smaller screens */
+  .slider-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
 
-  .star {
-    height: 15px; /* Adjust for smaller screens */
-    width: 15px; /* Adjust for smaller screens */
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .dots-container {
+    display: none;
   }
 }

@@ -299,163 +299,47 @@ export default function Home() {
             considerations.
           </p>
         </div>
-        <div className="price-flex">
-          <div className="price-list">
-            <div className="list-price">
-              <h3>Personal</h3>
-              <h4>
-                $5 <span>p/month</span>{" "}
-              </h4>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>1 integration</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Analytics</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Insight</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Insight</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Shared features </p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>No custom setting</p>
-              </div>
-              <div className="button-get">
-                {" "}
-                <button className="button-get">Get Started</button>
-              </div>
+        <div className="pricing-section">
+          {/* <h2>Our Pricing Plans</h2> */}
+          <div className="pricing-plans">
+            <div className="pricing-plan">
+              <h3>Basic</h3>
+              <p className="price">$19.99/month</p>
+              <ul>
+                <li>Insight</li>
+                <li>Analystics</li>
+                <li>Integration</li>
+                <li>Shared features</li>
+                <li>Insight</li>
+                <li>No custom option</li>
+              </ul>
+              <button>Choose Plan</button>
             </div>
-            <div className="list-price">
-              <h3>Professional</h3>
-              <h4>
-                $10 <span>p/month</span>{" "}
-              </h4>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>1 integration</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Analytics</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Insight</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Insight</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Shared features </p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>No custom setting</p>
-              </div>
-              <div className="button-get2">
-                <button className="button-get2">Get Started</button>
-              </div>
+            <div className="pricing-plan">
+              <h3>Standard</h3>
+              <p className="price">$49.99/month</p>
+              <ul>
+                <li>Insight</li>
+                <li>Analystics</li>
+                <li>Integration</li>
+                <li>Shared features</li>
+                <li>Insight</li>
+                <li>No custom option</li>
+              </ul>
+              <button>Choose Plan</button>
             </div>
-            {/* <div className="try"> */}
-            <div className="list-price">
-              <h3>Business</h3>
-              <h4>
-                $15 <span>p/month</span>{" "}
-              </h4>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>1 integration</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Analytics</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Insight</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Insight</p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>Shared features </p>
-              </div>
-              <div className="list-flex">
-                {" "}
-                <div>
-                  <img src="/images/Vector (8).png" />
-                </div>
-                <p>No custom setting</p>
-              </div>
-              <div className="button-get">
-                <button className="button-get">Get Started</button>
-              </div>
-              {/* </div> */}
+            <div className="pricing-plan">
+              <h3>Premium</h3>
+              <p className="price">$99.99/month</p>
+              <ul>
+                <li>Insight</li>
+                <li>Analystics</li>
+                <li>Integration</li>
+                <li>Shared features</li>
+                <li>Insight</li>
+                <li>No custom option</li>
+              </ul>
+              <button>Choose Plan</button>
             </div>
           </div>
         </div>

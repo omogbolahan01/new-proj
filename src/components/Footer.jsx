@@ -29,14 +29,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="stilll-footer">
-        <div className="footer-text">
+        {/* <div className="footer-text">
           <h4 className="my-header">FAQs</h4>
           <h3 className="my-header">Client Testimonials</h3>
           <p className="my-header">
             Discover what our clients have to say about their experiences
             working with DesignMax Agency
           </p>
-        </div>
+        </div> */}
         <div className="footer-last">
           <div className="site-logo" onClick={() => navigate("/")}>
             <div className="site-image">
